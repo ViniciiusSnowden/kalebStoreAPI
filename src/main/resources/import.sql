@@ -1,0 +1,5 @@
+INSERT INTO vnstore.cozinha (nome) values ( 'Italiana')
+INSERT INTO vnstore.cozinha (nome) values ( 'Mexicana')
+INSERT INTO vnstore.cozinha (nome) values( 'Japonesa')
+INSERT INTO vnstore.cozinha (nome) values ('Brasileira')
+INSERT INTO vnstore.cozinha (nome) values ( 'Indigana')
