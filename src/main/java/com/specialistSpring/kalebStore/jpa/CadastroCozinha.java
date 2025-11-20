@@ -28,4 +28,12 @@ public class CadastroCozinha {
         return manager.merge(cozinha);
     }
 
+    @Transactional
+    public void excluir(Long id){
+        Cozinha cozinha = buscarPorId(id);
+        if (cozinha.getId() != null){
+            manager.remove(cozinha);
+        }
+    }
+
 }
