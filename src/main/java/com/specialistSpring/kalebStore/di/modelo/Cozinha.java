@@ -1,18 +1,16 @@
 package com.specialistSpring.kalebStore.di.modelo;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Getter
-@Setter
-@NoArgsConstructor
+@Data
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 public class Cozinha {
 
+    @EqualsAndHashCode.Include
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
